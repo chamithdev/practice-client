@@ -10,9 +10,7 @@
   </div>
   <div class="col-4">
     <div class="card">
-      <img
-        src=""
-        alt=""
+      <img        
         class="card-img-top img-thumbnail"
         src="{{ member.photoUrl || './assets/user.png' }}"
         alt="{{ member.knownAs }}"
@@ -82,7 +80,7 @@
         </form>
       </tab>     
       <tab heading="Edit Photos">
-        <p>Photo edit</p>
+        <app-photo-editor [member]="member"></app-photo-editor>
       </tab>
     </tabset>
   </div>
